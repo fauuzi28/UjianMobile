@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import React from 'react';
+import { View, StyleSheet, Image } from 'react-native';
 import { Button } from 'react-native-elements';
 import { useDispatch } from 'react-redux';
 import { Imageprofile } from '../redux/actions/authactions';
 
-const Detail = ({navigation, route}) => {
+const Detail = ({route}) => {
     let dispatch = useDispatch();
 
     const handleImage = () => {
         return (
             dispatch(Imageprofile(route.params.detail.url))
             )
-            navigation.navigate('Home')
     }
 
     return (

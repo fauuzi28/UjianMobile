@@ -4,7 +4,7 @@ import { Icon, Input, Button } from 'react-native-elements';
 import { useDispatch } from 'react-redux';
 import { Login2 } from '../redux/actions/authactions';
 
-const Login = ({navigation}) => {
+const Login = () => {
     let [username, setUsername] = useState('');
     console.log(username)
     let dispatch = useDispatch();
