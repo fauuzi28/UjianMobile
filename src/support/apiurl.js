@@ -1,0 +1,1 @@
+export const API_URL = 'https://thecatapi.com/v1/images?api_key=91aca8fd-b41a-4248-9ec7-20def655e4b3'
